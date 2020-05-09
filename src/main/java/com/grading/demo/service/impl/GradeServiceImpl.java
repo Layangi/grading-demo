@@ -1,3 +1,7 @@
+/**
+ * author Layangi
+ */
+
 package com.grading.demo.service.impl;
 
 import com.grading.demo.dto.AssignmentDTO;
@@ -38,41 +42,8 @@ public class GradeServiceImpl implements GradeService {
     public void addStudent(StudentDTO studentDTO) {
 
         Student student = gradeMapper.studentDTOToStudent(studentDTO);
-
         studentRepository.save(student);
         //studentRepository.flush();
-    }
-
-    @Override
-    public List<Assignment> getAssignments(Long student_id) {
-
-        List<Assignment> assignmentList = assignmentRepository.findByStudent_Id(student_id);
-
-//    {
-//        List<EmployeeEntity> employeeList = repository.findAll();
-//
-//        if(employeeList.size() > 0) {
-//            return employeeList;
-//        } else {
-//            return new ArrayList<EmployeeEntity>();
-//        }
-//    }
-
-        // return gradeMapper.assignmentListToAssignmentDTOList(assignmentList);
-        return assignmentList;
-    }
-
-    @Override
-    public Assignment getAssignmentByIdList(Long id) {
-
-        Optional<Assignment> assignment = assignmentRepository.findById(id);
-//
-//        if(employee.isPresent()) {
-//            return employee.get();
-//        } else {
-//            throw new RecordNotFoundException("No employee record exist for given id");
-//        }
-        return assignment.get();
     }
 
     @Override
