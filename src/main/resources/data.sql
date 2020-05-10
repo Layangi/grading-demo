@@ -28,7 +28,6 @@ insert into assignment
 values(10012, 'English',DATE '2020-03-15', 'B','English Assignment', 'Completed', DATE '2020-03-01',10001);
 
 
-
 insert into question
 values(01, 1 ,'QUESTION - 01','RIGHT','2 minutes ', 1006);
 
@@ -60,5 +59,37 @@ values(09, 2 ,'QUESTION - 04','PARTIAL','2 minutes ', 1007);
 
 insert into question
 values(10, 1 ,'QUESTION - 05','RIGHT','3 minutes ', 1007);
+
+
+insert into question
+values(11, 1 ,'QUESTION - 01','RIGHT','2 minutes ', 10010);
+
+insert into question
+values(12, 1 ,'QUESTION - 02','RIGHT','1 minutes ', 10010);
+
+insert into question
+values(13, 3 ,'QUESTION - 03','RIGHT','1 minutes ', 10010);
+
+insert into question
+values(14, 2 ,'QUESTION - 04','PARTIAL','2 minutes ', 10010);
+
+insert into question
+values(15, 1 ,'QUESTION - 05','WRONG','3 minutes ', 10010);
+
+
+insert into question
+values(16, 1 ,'QUESTION - 01','RIGHT','2 minutes ', 10011);
+
+insert into question
+values(17, 1 ,'QUESTION - 02','RIGHT','1 minutes ', 10011);
+
+insert into question
+values(18, 3 ,'QUESTION - 03','RIGHT','1 minutes ', 10011);
+
+insert into question
+values(19, 2 ,'QUESTION - 04','PARTIAL','2 minutes ', 10011);
+
+insert into question
+values(20, 1 ,'QUESTION - 05','WRONG','3 minutes ', 10011);
 
 
